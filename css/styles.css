@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
 body {
     background-color: hsl(204, 43%, 93%);
-    font-size: 16px;
+    font-family: 'Karla', sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 
 main {
@@ -62,10 +65,19 @@ button {
     text-align: center;
     border-radius: 5px;
     width: 200px;
+    color: white;
 }
 
 .container-1, .container-2, .container-3 {
     padding: 20px;
+}
+
+.container-1,
+.container-2 > p:nth-child(1),
+#subscription-amount,
+button,
+.container-3 > p:nth-child(1)  {
+    font-weight: 700;
 }
 
 .attribution {
