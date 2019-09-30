@@ -1,139 +1,141 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
 body {
-    background-color: hsl(204, 43%, 93%);
-    font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: 240px 1fr;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: 240px 1fr;
 }
 
 .container-1 {
-    background-color: white;
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
+  background-color: white;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
 }
 
 .container-1 > p:nth-child(1) {
-    color: hsl(179, 62%, 43%);
-    margin-bottom: 15px;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
 }
 
 .container-1 > p:nth-child(2) {
-    color: hsl(71, 73%, 54%);
-    font-size: 20px;
+  color: hsl(71, 73%, 54%);
+  font-size: 20px;
 }
 
 .container-1 {
-    color: hsl(204, 43%, 93%);
+  color: hsl(204, 43%, 93%);
 }
 
 .container-2 {
-    background-color:  hsl(179, 62%, 43%);
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background-color: hsl(179, 62%, 43%);
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #subscription-type {
-    color: hsl(204, 43%, 93%);
+  color: hsl(204, 43%, 93%);
 }
 
 .container-3 {
-    background-color: hsla(179, 62%, 43%, 0.705);
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    color: hsl(204, 43%, 93%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background-color: hsla(179, 62%, 43%, 0.705);
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .container-3__title > p:nth-child(1) {
-    color: white;
-    margin-top: 40px;
+  color: white;
+  margin-top: 40px;
 }
 
 button {
-    background-color: hsl(71, 73%, 54%);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    width: 100%;
-    height: 50px;
-    color: white;
-    -webkit-box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 10px -2px rgba(0,0,0,0.75);
-    cursor: pointer;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  -webkit-box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
-.container-1, .container-2, .container-3 {
-    padding: 20px;
+.container-1,
+.container-2,
+.container-3 {
+  padding: 20px;
 }
 
 .container-1,
 .container-2 > p:nth-child(1),
 #subscription-amount,
 button,
-.container-3__title > p:nth-child(1)  {
-    font-weight: 700;
+.container-3__title > p:nth-child(1) {
+  font-weight: 700;
 }
 
 .container-1,
 .container-2 > p:nth-child(1),
 .container-3__title > p:nth-child(1),
 button {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .container-1 > p:nth-child(1),
 #subscription-amount {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 375px) {
-    main {
-        display: grid;
-        grid-template-columns: 200px;
-        grid-template-rows: 350px 1fr 1fr;
-    }
+@media only screen and (max-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 350px 1fr 1fr;
+  }
 
-    .container-1 {
-        grid-row: 1 / 2;
-        grid-column: 1 / 3;
-    }
+  .container-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
 
-    .container-2 {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-    }
+  .container-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
 
-    .container-3 {
-        grid-row: 3 / 4;
-        grid-column: 1 / 3;
-    }
+  .container-3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  }
 }
